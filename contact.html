@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;family=Noto+Sans:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link rel="stylesheet" href="./styles.css">
+
+    <title>Innovate Solutions - Contact Us</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans', sans-serif;
+        }
+
+        .form-select {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23FACA15' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+            background-position: right 0.5rem center;
+            background-repeat: no-repeat;
+            background-size: 1.5em 1.5em;
+            padding-right: 2.5rem;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 to-black text-white">
+    <div class="relative flex flex-col min-h-screen overflow-x-hidden">
+        <header
+                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-gray-800 px-6 md:px-10 py-5 shadow-lg bg-gray-950/80 backdrop-blur-md sticky top-0 z-50">
+
+                <!-- Logo and site name -->
+                <div class="flex items-center gap-3 text-white">
+                    <div class="size-8 text-yellow-400">
+                        <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <a href="./index.html"
+                        class="text-white text-2xl font-bold leading-tight tracking-[-0.015em]">Dhanwis </a>
+                </div>
+
+                <!-- Hamburger menu button (shown on small screens) -->
+                <button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none">
+                    &#9776;
+                </button>
+
+                <!-- Navigation (hidden on small screens by default) -->
+                <nav id="menu"
+                    class="hidden md:flex flex-1 justify-end gap-10 flex-wrap bg-gray-950 md:bg-transparent p-6 md:p-0 rounded-lg md:rounded-none absolute md:static top-[100%] right-6 md:right-auto w-[calc(100%-3rem)] md:w-auto z-50 flex-col md:flex-row">
+
+                    <div class="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8">
+                        <a class="text-gray-300 hover:text-yellow-400 text-lg font-medium leading-normal transition-all duration-300 ease-in-out hover:scale-105"
+                            href="./services.html">Services</a>
+                        <a class="text-gray-300 hover:text-yellow-400 text-lg font-medium leading-normal transition-all duration-300 ease-in-out hover:scale-105"
+                            href="./about.html">About</a>
+                        <a class="text-gray-300 hover:text-yellow-400 text-lg font-medium leading-normal transition-all duration-300 ease-in-out hover:scale-105"
+                            href="./portfolio.html">Portfolio</a>
+                        <a class="text-gray-300 hover:text-yellow-400 text-lg font-medium leading-normal transition-all duration-300 ease-in-out hover:scale-105"
+                            href="./blog.html">Blog</a>
+                        <a class="text-gray-300 hover:text-yellow-400 text-lg font-medium leading-normal transition-all duration-300 ease-in-out hover:scale-105"
+                            href="./career.html">Career</a>
+                        <a class="text-yellow-400 text-lg font-bold leading-normal transition-all duration-300 ease-in-out hover:scale-105 border-b-2 border-yellow-400 pb-1"
+                            href="./contact.html">Contact</a>
+                    </div>
+
+                    <button
+                        class="mt-6 md:mt-0 flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-yellow-400 hover:bg-yellow-500 text-black text-lg font-semibold leading-normal tracking-[0.015em] transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-yellow-500/50 transform hover:scale-105">
+                        <span class="truncate">Get a Quote</span>
+                    </button>
+                </nav>
+            </header>
+        <main class="flex-1 px-4 py-12 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h1 class=" text-3xl lg:text-5xl font-extrabold tracking-tight text-yellow-400 ">Let's Connect</h1>
+                    <p class="mt-6 max-w-2xl mx-auto text-xl text-gray-300 leading-relaxed">
+                        Have a project in mind or just want to say hello? We'd love to hear from you. Reach out and
+                        let's create something amazing together.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+                    <div class="lg:col-span-2 bg-gray-800/60 p-4 sm:p-10 rounded-2xl shadow-2xl backdrop-blur-lg">
+                        <h2 class="text-3xl font-bold tracking-tight mb-8 text-yellow-400">Send Us a Message</h2>
+                        <form class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-300 pb-1.5" for="name">Full
+                                        Name</label>
+                                    <input
+                                        class="form-input w-full rounded-lg border-gray-700 bg-gray-900 h-12 placeholder:text-gray-500 p-3 text-sm text-white focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 transition-all"
+                                        id="name" name="name" placeholder="e.g. Jane Doe" required="" type="text" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-300 pb-1.5" for="email">Email
+                                        Address</label>
+                                    <input
+                                        class="form-input w-full rounded-lg border-gray-700 bg-gray-900 h-12 placeholder:text-gray-500 p-3 text-sm text-white focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 transition-all"
+                                        id="email" name="email" placeholder="you@example.com" required=""
+                                        type="email" />
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-300 pb-1.5" for="phone">Phone
+                                        Number (Optional)</label>
+                                    <input
+                                        class="form-input w-full rounded-lg border-gray-700 bg-gray-900 h-12 placeholder:text-gray-500 p-3 text-sm text-white focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 transition-all"
+                                        id="phone" name="phone" placeholder="(123) 456-7890" type="tel" />
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-300 pb-1.5" for="company">Company
+                                        Name (Optional)</label>
+                                    <input
+                                        class="form-input w-full rounded-lg border-gray-700 bg-gray-900 h-12 placeholder:text-gray-500 p-3 text-sm text-white focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 transition-all"
+                                        id="company" name="company" placeholder="Your Company Inc." type="text" />
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 pb-1.5" for="service">Interested
+                                    Service</label>
+                                <select
+                                    class="form-select w-full rounded-lg border-gray-700 bg-gray-900 h-12 placeholder:text-gray-500 p-3 text-sm text-white focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 appearance-none transition-all"
+                                    id="service" name="service" required="">
+                                    <option class="text-gray-500" disabled="" selected="" value="">Choose a service
+                                    </option>
+                                    <option value="web-development">Web Development</option>
+                                    <option value="digital-marketing">Digital Marketing</option>
+                                    <option value="seo-optimization">SEO Optimization</option>
+                                    <option value="consulting">Consulting</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 pb-1.5" for="message">Your
+                                    Message</label>
+                                <textarea
+                                    class="form-textarea w-full rounded-lg border-gray-700 bg-gray-900 min-h-40 placeholder:text-gray-500 p-3 text-sm text-white focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 transition-all"
+                                    id="message" name="message" placeholder="Tell us about your project or inquiry..."
+                                    required="" rows="5"></textarea>
+                            </div>
+                            <div>
+                                <button
+                                    class="w-full flex items-center justify-center rounded-lg h-12 px-6 bg-yellow-400 text-black text-base font-bold hover:bg-yellow-300 transition-colors shadow-md hover:shadow-lg transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 focus:ring-offset-gray-900"
+                                    type="submit">
+                                    Submit Inquiry
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="space-y-8">
+                        <div class="bg-gray-800/60 p-8 rounded-2xl shadow-2xl backdrop-blur-lg">
+                            <h3 class="text-2xl font-bold mb-6 text-yellow-400">Contact Information</h3>
+                            <div class="space-y-5">
+                                <div class="flex items-start gap-4">
+                                    <span class="material-icons text-yellow-400 mt-1 text-2xl">location_on</span>
+                                    <div>
+                                        <h4 class="font-semibold text-lg text-gray-100">Our Office</h4>
+                                        <p class="text-base text-gray-300">123 Mission Street, Suite 400, San Francisco,
+                                            CA 94105</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <span class="material-icons text-yellow-400 mt-1 text-2xl">phone</span>
+                                    <div>
+                                        <h4 class="font-semibold text-lg text-gray-100">Phone</h4>
+                                        <p class="text-base text-gray-300 hover:text-yellow-400 transition-colors"><a
+                                                href="tel:+14155551212">(415) 555-1212</a></p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <span class="material-icons text-yellow-400 mt-1 text-2xl">email</span>
+                                    <div>
+                                        <h4 class="font-semibold text-lg text-gray-100">Email</h4>
+                                        <p class="text-base text-gray-300 hover:text-yellow-400 transition-colors"><a
+                                                href="mailto:contact@innovatesolutions.com">contact@innovatesolutions.com</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-800/60 p-8 rounded-2xl shadow-2xl backdrop-blur-lg">
+                            <h3 class="text-2xl font-bold mb-6 text-yellow-400">Find Us On The Map</h3>
+                            <div
+                                class="w-full aspect-[16/10] rounded-lg shadow-lg overflow-hidden border-2 border-yellow-400/30 hover:border-yellow-400 transition-all duration-300 group">
+                                <div class="w-full h-full bg-cover bg-center transform group-hover:scale-105 transition-transform duration-300"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCmwkdwXXgeyVdz1tzyfJkJwoi_s92NaL4k_AyujcH1aqpXZci9oSEJ71V2RacJVGIKdICoqjI-In57wMMDeHIR6udV5Dx5rKsXFJ6J-pEnC67PCpAaS75OZmrUzUWk9ytqzdSAHjvbyLcSwkAAcRRwi2M2NG1Scfz5p58pOEO2E6PSW11PPM8S5VgWQ6FOaOD5FdDN8YHgIAyWAFM88n618py0av9G4haNO4bdzlMuWs7QFLD5KV0euzEoKqYqDl3nxLxFoQWxLJo");'>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-800/60 p-8 rounded-2xl shadow-2xl backdrop-blur-lg">
+                            <h3 class="text-2xl font-bold mb-6 text-yellow-400">Follow Our Journey</h3>
+                            <div class="flex space-x-5 justify-center sm:justify-start">
+                                <a aria-label="Twitter"
+                                    class="flex items-center justify-center group size-12 rounded-full bg-gray-700 hover:bg-yellow-400 text-yellow-400 hover:text-black transition-all duration-300 transform hover:scale-110 shadow-md"
+                                    href="#">
+                                    <svg class="size-6" fill="currentColor" viewBox="0 0 256 256"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a aria-label="Facebook"
+                                    class="flex items-center justify-center group size-12 rounded-full bg-gray-700 hover:bg-yellow-400 text-yellow-400 hover:text-black transition-all duration-300 transform hover:scale-110 shadow-md"
+                                    href="#">
+                                    <svg class="size-6" fill="currentColor" viewBox="0 0 256 256"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a aria-label="Instagram"
+                                    class="flex items-center justify-center group size-12 rounded-full bg-gray-700 hover:bg-yellow-400 text-yellow-400 hover:text-black transition-all duration-300 transform hover:scale-110 shadow-md"
+                                    href="#">
+                                    <svg class="size-6" fill="currentColor" viewBox="0 0 256 256"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a aria-label="LinkedIn"
+                                    class="flex items-center justify-center group size-12 rounded-full bg-gray-700 hover:bg-yellow-400 text-yellow-400 hover:text-black transition-all duration-300 transform hover:scale-110 shadow-md"
+                                    href="#">
+                                    <svg class="size-6" fill="currentColor" viewBox="0 0 256 256"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="border-t border-solid border-t-gray-800 bg-black/30 mt-16">
+            <div class="mx-auto max-w-7xl px-5 py-10 text-center">
+                <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 mb-6 sm:justify-around">
+                    <a class="text-gray-400 text-sm hover:text-yellow-400 transition-colors" href="#">Privacy Policy</a>
+                    <a class="text-gray-400 text-sm hover:text-yellow-400 transition-colors" href="#">Terms of
+                        Service</a>
+                    <a class="text-gray-400 text-sm hover:text-yellow-400 transition-colors" href="#">Careers</a>
+                    <a class="text-gray-400 text-sm hover:text-yellow-400 transition-colors" href="#">Blog</a>
+                </div>
+                <p class="text-gray-400 text-sm">© 2023 Innovate Solutions. All rights reserved. Designed with passion.
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

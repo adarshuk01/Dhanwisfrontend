@@ -1,0 +1,376 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link as="style"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"
+        onload="this.rel='stylesheet'" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
+    <title>Stitch Design</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+        <link rel="stylesheet" href="./styles.css">
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #FBBF24, #F59E0B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hover-glow {
+            transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .hover-glow:hover {
+            box-shadow: 0 0 20px 5px rgba(251, 191, 36, 0.5);
+            transform: translateY(-5px);
+        }
+
+        .milestone-line::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #FBBF24, transparent);
+            z-index: 0;
+        }
+
+        .milestone-item .milestone-content {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .milestone-item:hover .milestone-content {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 10px 25px rgba(251, 191, 36, 0.3);
+        }
+
+        .milestone-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .milestone-item:hover .milestone-icon {
+            transform: rotate(360deg) scale(1.2);
+        }
+    </style>
+</head>
+
+<body class="bg-black text-yellow-400" style='font-family: Inter, "Noto Sans", sans-serif;'>
+    <div class="relative flex size-full min-h-screen flex-col dark group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            
+            <header
+                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-gray-800 px-6 md:px-10 py-5 shadow-lg bg-gray-950/80 backdrop-blur-md sticky top-0 z-50">
+
+                <!-- Logo and site name -->
+                <div class="flex items-center gap-3 text-white">
+                    <div class="size-8 text-yellow-400">
+                        <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <a href="./index.html"
+                        class="text-white text-2xl font-bold leading-tight tracking-[-0.015em]">Dhanwis </a>
+                </div>
+
+                <!-- Hamburger menu button (shown on small screens) -->
+                <button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none">
+                    &#9776;
+                </button>
+
+                <!-- Navigation (hidden on small screens by default) -->
+                <nav id="menu"
+                    class="hidden md:flex flex-1 justify-end gap-10 flex-wrap bg-gray-950 md:bg-transparent p-6 md:p-0 rounded-lg md:rounded-none absolute md:static top-[100%] right-6 md:right-auto w-[calc(100%-3rem)] md:w-auto z-50 flex-col md:flex-row">
+
+                    <div class="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8">
+                        <a class="text-gray-300 hover:text-yellow-400 text-lg font-medium leading-normal transition-all duration-300 ease-in-out hover:scale-105"
+                            href="./services.html">Services</a>
+                        <a class="text-yellow-400 text-lg font-bold leading-normal transition-all duration-300 ease-in-out hover:scale-105 border-b-2 border-yellow-400 pb-1"
+                            href="./about.html">About</a>
+                        <a class="text-gray-300 hover:text-yellow-400 text-lg font-medium leading-normal transition-all duration-300 ease-in-out hover:scale-105"
+                            href="./portfolio.html">Portfolio</a>
+                        <a class="text-gray-300 hover:text-yellow-400 text-lg font-medium leading-normal transition-all duration-300 ease-in-out hover:scale-105"
+                            href="./blog.html">Blog</a>
+                        <a class="text-gray-300 hover:text-yellow-400 text-lg font-medium leading-normal transition-all duration-300 ease-in-out hover:scale-105"
+                            href="./career.html">Career</a>
+                        <a class="text-gray-300 hover:text-yellow-400 text-lg font-medium leading-normal transition-all duration-300 ease-in-out hover:scale-105"
+                            href="./contact.html">Contact</a>
+                    </div>
+
+                    <button
+                        class="mt-6 md:mt-0 flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-yellow-400 hover:bg-yellow-500 text-black text-lg font-semibold leading-normal tracking-[0.015em] transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-yellow-500/50 transform hover:scale-105">
+                        <span class="truncate">Get a Quote</span>
+                    </button>
+                </nav>
+            </header>
+            <main
+                class="flex-1 px-4 py-10 md:px-10 lg:px-20 xl:px-40 bg-gradient-to-b from-black via-gray-900 to-black">
+                <div class="layout-content-container mx-auto flex max-w-[960px] flex-col gap-16 layout-content-container flex flex-col max-w-screen-xl w-full">
+                    <section class="text-center py-12" id="story">
+                        <h1 class="mb-6 text-5xl font-bold leading-tight tracking-tight gradient-text">Our Story</h1>
+                        <p class="text-lg font-light leading-relaxed text-gray-300 max-w-3xl mx-auto">
+                            At Dhanwis TechInfo Solution, we're more than just a web development and digital marketing
+                            agency; we're a team of passionate innovators dedicated to transforming your digital
+                            presence. Our journey began with a simple vision: to empower businesses with cutting-edge
+                            technology and creative marketing strategies that drive growth and success. We believe in
+                            the power of collaboration, transparency, and a client-centric approach, ensuring that every
+                            project we undertake is a testament to our commitment to excellence.
+                        </p>
+                    </section>
+                    <section class="grid md:grid-cols-2 gap-12" id="vision-mission">
+                        <div class="bg-gray-900 p-8 rounded-xl shadow-2xl hover-glow">
+                            <h2
+                                class="mb-4 text-3xl font-bold leading-tight tracking-tight text-white flex items-center">
+                                <span class="material-icons-outlined text-yellow-400 mr-3 text-4xl">visibility</span>
+                                Our Vision
+                            </h2>
+                            <p class="text-lg font-light leading-relaxed text-gray-300">
+                                To be the leading catalyst for digital transformation, recognized for our innovative
+                                solutions, exceptional client service, and unwavering commitment to achieving measurable
+                                results for our partners.
+                            </p>
+                        </div>
+                        <div class="bg-gray-900 p-8 rounded-xl shadow-2xl hover-glow">
+                            <h2
+                                class="mb-4 text-3xl font-bold leading-tight tracking-tight text-white flex items-center">
+                                <span class="material-icons-outlined text-yellow-400 mr-3 text-4xl">flag</span> Our
+                                Mission
+                            </h2>
+                            <p class="text-lg font-light leading-relaxed text-gray-300">
+                                To empower businesses with bespoke web development and strategic digital marketing
+                                services that enhance their brand visibility, engage their target audience, and drive
+                                sustainable growth in the digital landscape.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="py-12" id="team">
+                        <h2 class="mb-12 text-4xl font-bold leading-tight tracking-tight text-center text-white">Meet
+                            Our Innovators</h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                            <div
+                                class="flex flex-col items-center gap-4 rounded-xl bg-gray-900 p-6 shadow-lg transition-all duration-300 ease-in-out hover:shadow-yellow-400/30 hover:scale-105 group">
+                                <div
+                                    class="relative aspect-square w-36 rounded-full overflow-hidden border-4 border-yellow-400 group-hover:border-yellow-500 transition-colors">
+                                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBLnzXYZM2ouDqnDKJRjQPk29tvdORMS7Ol9k2jHW0Coh9iedAlF5YFzyknHQB4TfV_tiaHevVxw8j8nwNj_oqMevCVia8dESxXuaz4L-H9kZZlTZ4E4iDylB0tQIAvkQjyExtgqfYTppu89CVMx8pJ8dTZ7ZbHjEpr5WQMY-R1RMrjMIq8CpMtORc00ZO06QCEKT-R5AMWPvcOystoK2UGx2wnKB1GWqoQZZottdUcGt3uguM4kAA7fF-0pifY4awofV0vbEPsz8M");'>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-xl font-semibold text-white">Ethan Carter</p>
+                                    <p class="text-base text-yellow-400 group-hover:text-yellow-300 transition-colors">
+                                        CEO</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col items-center gap-4 rounded-xl bg-gray-900 p-6 shadow-lg transition-all duration-300 ease-in-out hover:shadow-yellow-400/30 hover:scale-105 group">
+                                <div
+                                    class="relative aspect-square w-36 rounded-full overflow-hidden border-4 border-yellow-400 group-hover:border-yellow-500 transition-colors">
+                                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDsZ605X13qc7mm2wIXuPtTrX_4uXjOl3SQ4aVIDbUshhtDREFQIMcNnLt1yghuYugl7MYihdrQ4oll8njGMqUF_u9S44bbL_TryczXVwSX1IAdXt6ZCc7ghwN-imbeKG3CiTKvIIeY766m85eIPL3gQ_drLs6HJPk8cKvlEqUpk3TjoJq5-u9a4oXdq02Hq5p5B1uQNMGrDKZWGBM5GVXiemTnLOLZ1VcudhgeZ4bUJBgC13JJJ_hZ8fRz93Ij-5BFzE7lkHtp4FE");'>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-xl font-semibold text-white">Olivia Bennett</p>
+                                    <p class="text-base text-yellow-400 group-hover:text-yellow-300 transition-colors">
+                                        Head of Marketing</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col items-center gap-4 rounded-xl bg-gray-900 p-6 shadow-lg transition-all duration-300 ease-in-out hover:shadow-yellow-400/30 hover:scale-105 group">
+                                <div
+                                    class="relative aspect-square w-36 rounded-full overflow-hidden border-4 border-yellow-400 group-hover:border-yellow-500 transition-colors">
+                                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA9paFuv3YjRW-OEGjdi6qOZyyzYK_Z1_38E5ahS1DywDI1uQav_qYPewYdaqem6169i3qBns9ZFlZ0IBa6ZRoCbxfb-P6NpooF9UcLAFEyMqlAYTEWKRwXdt8iiZgaQ0RxWFHsYZl5czr3McM8iMgDcTaJcT7KjeuqU0Df908oioAWI5LCaANXLW_89CGZEHzEPhyDC__3rJqn4G38SDycKb5ZP8orT8JUDqKmFqcYv_cXf1AjszdQuNLr0RYezcVVhwWiJcmrtkQ");'>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-xl font-semibold text-white">Noah Thompson</p>
+                                    <p class="text-base text-yellow-400 group-hover:text-yellow-300 transition-colors">
+                                        Lead Developer</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col items-center gap-4 rounded-xl bg-gray-900 p-6 shadow-lg transition-all duration-300 ease-in-out hover:shadow-yellow-400/30 hover:scale-105 group">
+                                <div
+                                    class="relative aspect-square w-36 rounded-full overflow-hidden border-4 border-yellow-400 group-hover:border-yellow-500 transition-colors">
+                                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAz9eJBm7rUfS1wXjNHcZO_vWV9AEcAVnIE5bl53qgOTi4LR1bkMfNFy1u9vWUmmeiBkxVBdc3BkC84U2DQqRRf21myCVmQnsp9k8zeAdYUz4JCRUCdemUArycZumtXhJeUOabloXkhO9k7ZshHUHLcT5tBQkXIppuKF5sDBBXV0USoIDsGGLi5vS8lt4ywgm-3jM2MpRt5lRj_ooc_fR-_CNEup003m2wRnZ9YXmaHpHEubwSMTFduiaXVNrLARm2acRnxH2u19As");'>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-xl font-semibold text-white">Sophia Davis</p>
+                                    <p class="text-base text-yellow-400 group-hover:text-yellow-300 transition-colors">
+                                        Creative Director</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="py-16" id="timeline">
+                        <h2 class="mb-16 text-4xl font-bold leading-tight tracking-tight text-center text-white">Our
+                            Milestones</h2>
+                        <div class="relative px-4">
+                            <div class="milestone-line"></div>
+                            <div class="grid md:grid-cols-2 gap-x-16 gap-y-12 relative">
+                                <div
+                                    class="milestone-item flex flex-col items-center text-center md:items-start md:text-left relative z-10">
+                                    <div
+                                        class="milestone-icon bg-yellow-400 text-black rounded-full p-4 mb-4 transform transition-transform duration-300 ease-in-out">
+                                        <span class="material-icons-outlined text-3xl">rocket_launch</span>
+                                    </div>
+                                    <div class="milestone-content bg-gray-800 p-6 rounded-lg shadow-xl w-full">
+                                        <h3 class="text-2xl font-semibold text-white mb-2">Journey Begins</h3>
+                                        <p class="text-xl text-yellow-300 mb-1">2024</p>
+                                        <p class="text-gray-400 text-sm">Dhanwis TechInfo Solution was founded with a vision
+                                            to redefine digital excellence.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="milestone-item flex flex-col items-center text-center md:items-end md:text-right relative z-10 md:mt-24">
+                                    <div
+                                        class="milestone-icon bg-yellow-400 text-black rounded-full p-4 mb-4 transform transition-transform duration-300 ease-in-out">
+                                        <span class="material-icons-outlined text-3xl">groups</span>
+                                    </div>
+                                    <div class="milestone-content bg-gray-800 p-6 rounded-lg shadow-xl w-full">
+                                        <h3 class="text-2xl font-semibold text-white mb-2">Growing Our Family</h3>
+                                        <p class="text-xl text-yellow-300 mb-1">Present</p>
+                                        <p class="text-gray-400 text-sm">Continuously expanding our team and services,
+                                            driven by innovation and client success.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="text-center py-12 bg-gray-900 rounded-xl shadow-2xl my-10" id="careers">
+                        <h2 class="mb-4 text-4xl font-bold leading-tight tracking-tight gradient-text">Join Our Team
+                        </h2>
+                        <p class="text-lg font-light leading-relaxed text-gray-300 mb-8 max-w-2xl mx-auto">
+                            Become part of a dynamic team shaping the future of digital innovation. Explore our current
+                            openings and embark on a journey of growth and success with us.
+                        </p>
+                        <a
+                            href="./career.html"
+                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-10 bg-yellow-400 text-black text-lg font-bold leading-normal tracking-[0.015em] hover:bg-yellow-500 transition-all duration-300 ease-in-out transform hover:scale-105 mx-auto shadow-lg hover:shadow-yellow-400/50">
+                            <span class="truncate">View Openings</span>
+                    </a>
+                    </section>
+                    <section class="py-12" id="clients">
+                        <h2 class="mb-12 text-4xl font-bold leading-tight tracking-tight text-center text-white">Our
+                            Valued Partners</h2>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                            <div
+                                class="aspect-square rounded-lg bg-gray-800 flex items-center justify-center p-4 shadow-md hover:shadow-lg hover:shadow-yellow-500/30 transition-all duration-300 ease-in-out transform hover:scale-110">
+                                <span class="material-icons-outlined text-5xl text-yellow-400">business</span>
+                            </div>
+                            <div
+                                class="aspect-square rounded-lg bg-gray-800 flex items-center justify-center p-4 shadow-md hover:shadow-lg hover:shadow-yellow-500/30 transition-all duration-300 ease-in-out transform hover:scale-110">
+                                <span class="material-icons-outlined text-5xl text-yellow-400">storefront</span>
+                            </div>
+                            <div
+                                class="aspect-square rounded-lg bg-gray-800 flex items-center justify-center p-4 shadow-md hover:shadow-lg hover:shadow-yellow-500/30 transition-all duration-300 ease-in-out transform hover:scale-110">
+                                <span class="material-icons-outlined text-5xl text-yellow-400">work</span>
+                            </div>
+                            <div
+                                class="aspect-square rounded-lg bg-gray-800 flex items-center justify-center p-4 shadow-md hover:shadow-lg hover:shadow-yellow-500/30 transition-all duration-300 ease-in-out transform hover:scale-110">
+                                <span class="material-icons-outlined text-5xl text-yellow-400">groups</span>
+                            </div>
+                            <div
+                                class="aspect-square rounded-lg bg-gray-800 flex items-center justify-center p-4 shadow-md hover:shadow-lg hover:shadow-yellow-500/30 transition-all duration-300 ease-in-out transform hover:scale-110">
+                                <span class="material-icons-outlined text-5xl text-yellow-400">apartment</span>
+                            </div>
+                            <div
+                                class="aspect-square rounded-lg bg-gray-800 flex items-center justify-center p-4 shadow-md hover:shadow-lg hover:shadow-yellow-500/30 transition-all duration-300 ease-in-out transform hover:scale-110">
+                                <span class="material-icons-outlined text-5xl text-yellow-400">foundation</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+             <footer class="flex justify-center border-t border-solid border-t-gray-800 mt-16 bg-gray-950">
+                <div class="flex max-w-screen-xl w-full flex-col px-5 py-12 @container">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10 text-gray-400">
+                        <div>
+                            <div class="flex items-center gap-3 text-white mb-4">
+                                <svg class="h-8 w-8 text-yellow-400" fill="none" viewBox="0 0 48 48"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd"
+                                        d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                    <path clip-rule="evenodd"
+                                        d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                </svg>
+                                <h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">Dhanwis TechInfo Solution</h2>
+                            </div>
+                            <p class="text-sm leading-relaxed mb-4">Empowering businesses with cutting-edge web
+                                solutions and impactful digital marketing strategies.</p>
+                            <div class="flex space-x-4">
+                                <a class="text-gray-400 hover:text-yellow-400 transition-colors" href="#"><svg
+                                        class="h-5 w-5" fill="none" height="24" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
+                                        </path>
+                                    </svg></a>
+                                <a class="text-gray-400 hover:text-yellow-400 transition-colors" href="#"><svg
+                                        class="h-5 w-5" fill="none" height="24" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                                        </path>
+                                    </svg></a>
+                                <a class="text-gray-400 hover:text-yellow-400 transition-colors" href="#"><svg
+                                        class="h-5 w-5" fill="none" height="24" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                        </path>
+                                        <rect height="12" width="4" x="2" y="9"></rect>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
+                            <ul class="space-y-2 text-sm">
+                                <li><a class="hover:text-yellow-400 transition-colors" href="#">Services</a></li>
+                                <li><a class="hover:text-yellow-400 transition-colors" href="#">Portfolio</a></li>
+                                <li><a class="hover:text-yellow-400 transition-colors" href="#">Blog</a></li>
+                                <li><a class="hover:text-yellow-400 transition-colors" href="#">About Us</a></li>
+                                <li><a class="hover:text-yellow-400 transition-colors" href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-white text-lg font-semibold mb-4">Contact Us</h3>
+                            <address class="not-italic text-sm space-y-2">
+                                <p>123 Tech Avenue, Silicon Valley, CA 94000</p>
+                                <p>Email: <a class="hover:text-yellow-400 transition-colors"
+                                        href="mailto:info@techrisesolutions.com">info@techrisesolutions.com</a></p>
+                                <p>Phone: <a class="hover:text-yellow-400 transition-colors"
+                                        href="tel:+1234567890">(123) 456-7890</a></p>
+                            </address>
+                        </div>
+                    </div>
+                    <div
+                        class="border-t border-gray-700 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm">
+                        <p class="text-gray-500">© 2024 Dhanwis TechInfo Solution. All rights reserved.</p>
+                        <div class="flex gap-x-6 gap-y-2 mt-4 sm:mt-0">
+                            <a class="text-gray-400 hover:text-yellow-400 transition-colors" href="#">Privacy Policy</a>
+                            <a class="text-gray-400 hover:text-yellow-400 transition-colors" href="#">Terms of
+                                Service</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

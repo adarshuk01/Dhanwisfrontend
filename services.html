@@ -1,0 +1,477 @@
+<html>
+
+<head>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link as="style"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Poppins%3Awght%40400%3B500%3B600%3B700"
+        onload="this.rel='stylesheet'" rel="stylesheet" />
+    <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stitch Design</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+        <link rel="stylesheet" href="./styles.css">
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #FBBF24, #F59E0B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card-hover-effect {
+            transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, background-color 0.3s ease-out;
+        }
+
+        .card-hover-effect:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(251, 191, 36, 0.1), 0 10px 10px -5px rgba(251, 191, 36, 0.08);
+        }
+
+        .service-card-bg {
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+        }
+
+        .service-card-hover-bg:hover {
+            background: linear-gradient(145deg, rgba(251, 191, 36, 0.1) 0%, rgba(251, 191, 36, 0.02) 100%);
+        }
+    </style>
+</head>
+
+<body  class="antialiased" style='font-family: Inter, "Noto Sans", sans-serif;'>
+    <div class="relative flex size-full min-h-screen flex-col bg-black dark group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+             <header
+                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-gray-800 px-6 md:px-10 py-5 shadow-lg bg-gray-950/80 backdrop-blur-md sticky top-0 z-50">
+
+                <!-- Logo and site name -->
+                <div class="flex items-center gap-3 text-white">
+                    <div class="size-8 text-yellow-400">
+                        <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <a href="./index.html"
+                        class="text-white text-2xl font-bold leading-tight tracking-[-0.015em]">Dhanwis </a>
+                </div>
+
+                <!-- Hamburger menu button (shown on small screens) -->
+                <button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none">
+                    &#9776;
+                </button>
+
+                <!-- Navigation (hidden on small screens by default) -->
+                <nav id="menu"
+                    class="hidden md:flex flex-1 justify-end gap-10 flex-wrap bg-gray-950 md:bg-transparent p-6 md:p-0 rounded-lg md:rounded-none absolute md:static top-[100%] right-6 md:right-auto w-[calc(100%-3rem)] md:w-auto z-50 flex-col md:flex-row">
+
+                    <div class="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8">
+                        <a class="text-yellow-400 text-lg font-bold leading-normal transition-all duration-300 ease-in-out hover:scale-105 border-b-2 border-yellow-400 pb-1"
+                            href="./services.html">Services</a>
+                        <a class="text-gray-300 hover:text-yellow-400 text-lg font-medium leading-normal transition-all duration-300 ease-in-out hover:scale-105"
+                            href="./about.html">About</a>
+                        <a class="text-gray-300 hover:text-yellow-400 text-lg font-medium leading-normal transition-all duration-300 ease-in-out hover:scale-105"
+                            href="./portfolio.html">Portfolio</a>
+                        <a class="text-gray-300 hover:text-yellow-400 text-lg font-medium leading-normal transition-all duration-300 ease-in-out hover:scale-105"
+                            href="./blog.html">Blog</a>
+                        <a class="text-gray-300 hover:text-yellow-400 text-lg font-medium leading-normal transition-all duration-300 ease-in-out hover:scale-105"
+                            href="./career.html">Career</a>
+                        <a class="text-gray-300 hover:text-yellow-400 text-lg font-medium leading-normal transition-all duration-300 ease-in-out hover:scale-105"
+                            href="./contact.html">Contact</a>
+                    </div>
+
+                    <button
+                        class="mt-6 md:mt-0 flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-yellow-400 hover:bg-yellow-500 text-black text-lg font-semibold leading-normal tracking-[0.015em] transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-yellow-500/50 transform hover:scale-105">
+                        <span class="truncate">Get a Quote</span>
+                    </button>
+                </nav>
+            </header>
+            <main class="px-2 md:px-20 lg:px-40 flex flex-1 justify-center py-8 md:py-12">
+                <div class="layout-content-container flex flex-col max-w-screen-xl w-full">
+                    <section class="hero-section @container mb-16 md:mb-24 py-16 md:py-24">
+                        <div class="relative flex flex-col gap-8 items-center justify-center text-center">
+                            <div
+                                class="absolute -top-16 -left-24 w-72 h-72 bg-yellow-400/20 rounded-full filter blur-3xl opacity-70 animate-pulse">
+                            </div>
+                            <div
+                                class="absolute -bottom-16 -right-24 w-72 h-72 bg-purple-600/20 rounded-full filter blur-3xl opacity-70 animate-pulse delay-2000">
+                            </div>
+                            <div class="relative z-10 flex flex-col gap-6 max-w-3xl mx-auto items-center">
+                                <h1
+                                    class="text-white text-4xl lg:text-6xl font-bold leading-tight tracking-tight @[480px]:text-2xl @[480px]:leading-tight @[480px]:tracking-tight">
+                                    Elevate Your Brand with <span class="gradient-text">Cutting-Edge</span> Digital
+                                    Solutions
+                                </h1>
+                                <p
+                                    class="text-gray-300 text-lg font-normal leading-relaxed @[480px]:text-xl @[480px]:leading-relaxed">
+                                    We specialize in crafting bespoke web experiences and impactful digital marketing
+                                    strategies that drive growth and resonate with your audience.
+                                </p>
+                            </div>
+                            <button
+                                class="relative z-10 flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 @[480px]:h-14 @[480px]:px-10 bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black text-base font-semibold leading-normal tracking-[0.015em] @[480px]:text-lg @[480px]:font-semibold @[480px]:leading-normal @[480px]:tracking-[0.015em] transition-all duration-300 shadow-lg hover:shadow-yellow-500/40 transform hover:scale-105 mt-6">
+                                <span class="truncate">Discover Our Services</span>
+                            </button>
+                        </div>
+                    </section>
+                    <section class="services-section mb-16 md:mb-24">
+                        <div class="py-6 px-4 md:px-0">
+                            <div class="mb-6 md:mb-10 text-center">
+                                <h2 class="text-white text-4xl md:text-5xl font-bold leading-tight tracking-tight mb-4">
+                                    Our <span class="gradient-text">Core Services</span></h2>
+                                <p class="text-gray-400 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
+                                    Empowering your business with a comprehensive suite of digital solutions tailored
+                                    for success.
+                                </p>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <div
+                                    class="group relative flex flex-col rounded-2xl border border-gray-700/50 p-4 lg:p-6 card-hover-effect service-card-bg service-card-hover-bg overflow-hidden backdrop-blur-sm">
+                                    <div
+                                        class="absolute -top-1/3 -left-1/4 w-2/3 h-2/3 bg-yellow-500/10 rounded-full filter blur-3xl opacity-0 group-hover:opacity-50 transition-opacity duration-500">
+                                    </div>
+                                    <div class="relative z-10 flex flex-col gap-6 items-start text-left h-full">
+                                        <div
+                                            class="text-yellow-400 p-4 rounded-xl bg-gray-800/70 border border-yellow-400/30 w-fit shadow-lg group-hover:bg-yellow-400/20 group-hover:border-yellow-400/50 transition-all duration-300 transform group-hover:scale-110">
+                                            <svg class="size-10 text-yellow-400 group-hover:text-yellow-300 transition-colors duration-300"
+                                                fill="currentColor" viewBox="0 0 256 256"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="flex flex-col gap-3 flex-grow">
+                                            <h3 class="text-white text-2xl font-semibold leading-tight">Web Development
+                                            </h3>
+                                            <p class="text-gray-300 text-base font-normal leading-relaxed">Crafting
+                                                responsive, high-performance websites tailored to your brand and user
+                                                experience. We build modern, scalable solutions using the latest
+                                                technologies.</p>
+                                        </div>
+                                        <a class="inline-flex items-center text-yellow-400 hover:text-yellow-300 font-medium transition-colors duration-300 group-hover:underline mt-auto"
+                                            href="#">
+                                            Learn More
+                                            <svg class="w-5 h-5 ml-1.5 transform group-hover:translate-x-1.5 transition-transform duration-300"
+                                                fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="group relative flex flex-col rounded-2xl border border-gray-700/50 p-4 lg:p-6 card-hover-effect service-card-bg service-card-hover-bg overflow-hidden backdrop-blur-sm">
+                                    <div
+                                        class="absolute -top-1/3 -left-1/4 w-2/3 h-2/3 bg-purple-600/10 rounded-full filter blur-3xl opacity-0 group-hover:opacity-50 transition-opacity duration-500 delay-100">
+                                    </div>
+                                    <div class="relative z-10 flex flex-col gap-6 items-start text-left h-full">
+                                        <div
+                                            class="text-yellow-400 p-4 rounded-xl bg-gray-800/70 border border-yellow-400/30 w-fit shadow-lg group-hover:bg-yellow-400/20 group-hover:border-yellow-400/50 transition-all duration-300 transform group-hover:scale-110">
+                                            <svg class="size-10 text-yellow-400 group-hover:text-yellow-300 transition-colors duration-300"
+                                                fill="currentColor" viewBox="0 0 256 256"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M232,208a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V48a8,8,0,0,1,16,0v94.37L90.73,98a8,8,0,0,1,10.07-.38l58.81,44.11L218.73,90a8,8,0,1,1,10.54,12l-64,56a8,8,0,0,1-10.07.38L96.39,114.29,40,163.63V200H224A8,8,0,0,1,232,208Z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="flex flex-col gap-3 flex-grow">
+                                            <h3 class="text-white text-2xl font-semibold leading-tight">Digital
+                                                Marketing</h3>
+                                            <p class="text-gray-300 text-base font-normal leading-relaxed">Implementing
+                                                data-driven marketing strategies to reach your target audience, boost
+                                                engagement, and maximize your return on investment.</p>
+                                        </div>
+                                        <a class="inline-flex items-center text-yellow-400 hover:text-yellow-300 font-medium transition-colors duration-300 group-hover:underline mt-auto"
+                                            href="#">
+                                            Learn More
+                                            <svg class="w-5 h-5 ml-1.5 transform group-hover:translate-x-1.5 transition-transform duration-300"
+                                                fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="group relative flex flex-col rounded-2xl border border-gray-700/50 p-4 lg:p-6 card-hover-effect service-card-bg service-card-hover-bg overflow-hidden backdrop-blur-sm md:col-span-2 lg:col-span-1">
+                                    <div
+                                        class="absolute -top-1/3 -left-1/4 w-2/3 h-2/3 bg-teal-500/10 rounded-full filter blur-3xl opacity-0 group-hover:opacity-50 transition-opacity duration-500 delay-200">
+                                    </div>
+                                    <div class="relative z-10 flex flex-col gap-6 items-start text-left h-full">
+                                        <div
+                                            class="text-yellow-400 p-4 rounded-xl bg-gray-800/70 border border-yellow-400/30 w-fit shadow-lg group-hover:bg-yellow-400/20 group-hover:border-yellow-400/50 transition-all duration-300 transform group-hover:scale-110">
+                                            <svg class="size-10 text-yellow-400 group-hover:text-yellow-300 transition-colors duration-300"
+                                                fill="currentColor" viewBox="0 0 256 256"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="flex flex-col gap-3 flex-grow">
+                                            <h3 class="text-white text-2xl font-semibold leading-tight">Search Engine
+                                                Optimization (SEO)</h3>
+                                            <p class="text-gray-300 text-base font-normal leading-relaxed">Optimizing
+                                                your website's content and structure to rank higher in search engine
+                                                results, attract qualified organic traffic, and increase visibility for
+                                                your brand.</p>
+                                        </div>
+                                        <a class="inline-flex items-center text-yellow-400 hover:text-yellow-300 font-medium transition-colors duration-300 group-hover:underline mt-auto"
+                                            href="#">
+                                            Learn More
+                                            <svg class="w-5 h-5 ml-1.5 transform group-hover:translate-x-1.5 transition-transform duration-300"
+                                                fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-12 md:mt-16 text-center">
+                                <button
+                                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 @[480px]:h-14 @[480px]:px-10 bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black text-base font-semibold leading-normal tracking-[0.015em] @[480px]:text-lg @[480px]:font-semibold @[480px]:leading-normal @[480px]:tracking-[0.015em] w-fit mx-auto transition-all duration-300 shadow-lg hover:shadow-yellow-500/40 transform hover:scale-105">
+                                    <span class="truncate">View All Services</span>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="case-studies-section mb-16 md:mb-24">
+                        <div class="px-4 py-12">
+                            <h2
+                                class="text-white text-4xl md:text-5xl font-bold leading-tight tracking-tight mb-12 text-center">
+                                Featured Portfolio</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <div
+                                    class="group flex flex-col rounded-xl overflow-hidden border border-gray-800 bg-gray-900/80 hover:shadow-2xl hover:shadow-yellow-400/10 transition-all duration-300 ease-in-out transform hover:-translate-y-2">
+                                    <div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover"
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDWz7lYfUsi6RPjrGHMYH0BSyfpeVYs2RuzfNVDlKEh748iXV4qvAp-pLUODPrKaDU-Wh8EkTRFdeEOXbTuwuAQg-R1866qK1KsHKXXDBNc350YFUjFyJvLZnBs5IfiEgFT5hZFhKjxvqE_0YtLOdLJTJqW75G3JScE00S0Zp7AvTwDzIMnRokE1X0aUQ8OxZfLDddlOS_3e0mu7lYb9oBbi4J1xUQ7R3Ms3_rYfij3pBjpn-RKVClNCJqZuR5m2YNNB_lTD46GR9A");'>
+                                    </div>
+                                    <div class="p-6 flex flex-col flex-grow">
+                                        <h3 class="text-white text-xl font-semibold leading-tight mb-2">Project Zenith
+                                        </h3>
+                                        <p class="text-gray-400 text-sm font-normal leading-relaxed mb-4 flex-grow">A
+                                            cutting-edge e-commerce platform for a leading fashion brand, resulting in a
+                                            40% increase in conversions.</p>
+                                        <a class="inline-flex items-center text-yellow-400 hover:text-yellow-300 font-medium transition-colors duration-300 mt-auto group-hover:underline"
+                                            href="#">
+                                            View Case Study
+                                            <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform duration-300"
+                                                fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="group flex flex-col rounded-xl overflow-hidden border border-gray-800 bg-gray-900/80 hover:shadow-2xl hover:shadow-yellow-400/10 transition-all duration-300 ease-in-out transform hover:-translate-y-2">
+                                    <div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover"
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCg1PxxX26trjQn1fSYF6SzEiQNr-3mqh1thE7SV3Q5XgntHI_EPoCKhdeTfH69X3Ar-pQ9vUEBqniolQltbobhz11qwWhRN1QmZc1dYUU1CI7n26SvnFNTsMTqQB_3ym48U8KIKGVe6kDFLfmKHUkUFykX9WpnavT0y0yqA4hBCEnpPH76q6cHSRQnMRlqMOr1A8vOnZAmLXAGl9AdGVWkDO0CopjhKSenLkNT0q4astt0q7OvRQHbhrzNzlSyVXg-I-RRZUGEoyA");'>
+                                    </div>
+                                    <div class="p-6 flex flex-col flex-grow">
+                                        <h3 class="text-white text-xl font-semibold leading-tight mb-2">Campaign Phoenix
+                                        </h3>
+                                        <p class="text-gray-400 text-sm font-normal leading-relaxed mb-4 flex-grow">A
+                                            comprehensive digital marketing campaign for a tech startup, achieving a
+                                            250% growth in organic traffic.</p>
+                                        <a class="inline-flex items-center text-yellow-400 hover:text-yellow-300 font-medium transition-colors duration-300 mt-auto group-hover:underline"
+                                            href="#">
+                                            View Case Study
+                                            <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform duration-300"
+                                                fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="group flex flex-col rounded-xl overflow-hidden border border-gray-800 bg-gray-900/80 hover:shadow-2xl hover:shadow-yellow-400/10 transition-all duration-300 ease-in-out transform hover:-translate-y-2">
+                                    <div class="w-full bg-center bg-no-repeat aspect-[4/3] bg-cover"
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCLMIqn8sF0IrtqlPW0-bulnye-SE2FIWeM7t_r4tJb0m9k7hwFa9dIGAIF9rmc4buB0VJoql_UU40ORf0cNWYcPEhtYA07iuzOeYaVOgOhs02avTWGF6GrZSiyxhE_oUEjXlN2aBJ_vi9HhNj6NLUF4zUTr8RTnL5qY7vj0bPmnOqtb-lYwP3oYyq91vWToWOB2FR33Ha2DAh992jR6S-emmrLQ2b-mJF_wvmHFcD9WSC4CCZX0QvZIjlN91b9CwVyeC_pKTWpdlc");'>
+                                    </div>
+                                    <div class="p-6 flex flex-col flex-grow">
+                                        <h3 class="text-white text-xl font-semibold leading-tight mb-2">SEO Success
+                                            Story</h3>
+                                        <p class="text-gray-400 text-sm font-normal leading-relaxed mb-4 flex-grow">
+                                            Achieving top search rankings for a local business, leading to a 70%
+                                            increase in leads.</p>
+                                        <a class="inline-flex items-center text-yellow-400 hover:text-yellow-300 font-medium transition-colors duration-300 mt-auto group-hover:underline"
+                                            href="#">
+                                            View Case Study
+                                            <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform duration-300"
+                                                fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="why-choose-us-section mb-12 md:mb-16">
+                        <div class="px-4 py-12  rounded-xl   shadow-xl">
+                            <div class="mb-12 text-center">
+                                <h2 class="text-white text-4xl md:text-5xl font-bold leading-tight tracking-tight mb-3">
+                                    Why Choose Us?</h2>
+                                <p class="text-gray-400 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
+                                    We are committed to delivering exceptional results and building long-term
+                                    partnerships with our clients.
+                                </p>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <div
+                                    class="flex flex-col items-center text-center gap-5 p-6 rounded-lg border border-gray-700/70 bg-gray-800/60 hover:bg-gray-700/80 transition-all duration-300 ease-in-out transform hover:scale-105">
+                                    <div
+                                        class="text-yellow-400 bg-yellow-400/10 p-4 rounded-full ring-2 ring-yellow-400/30">
+                                        <svg class="size-10" fill="currentColor" viewBox="0 0 256 256"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <h3 class="text-white text-xl font-semibold leading-tight">Client-Centric
+                                            Approach</h3>
+                                        <p class="text-gray-400 text-sm font-normal leading-relaxed">We prioritize your
+                                            needs and goals, ensuring a collaborative and transparent process from start
+                                            to finish.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center text-center gap-5 p-6 rounded-lg border border-gray-700/70 bg-gray-800/60 hover:bg-gray-700/80 transition-all duration-300 ease-in-out transform hover:scale-105">
+                                    <div
+                                        class="text-yellow-400 bg-yellow-400/10 p-4 rounded-full ring-2 ring-yellow-400/30">
+                                        <svg class="size-10" fill="currentColor" viewBox="0 0 256 256"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <h3 class="text-white text-xl font-semibold leading-tight">Timely Delivery</h3>
+                                        <p class="text-gray-400 text-sm font-normal leading-relaxed">We adhere to strict
+                                            timelines and deliver projects on schedule, without compromising quality or
+                                            attention to detail.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center text-center gap-5 p-6 rounded-lg border border-gray-700/70 bg-gray-800/60 hover:bg-gray-700/80 transition-all duration-300 ease-in-out transform hover:scale-105">
+                                    <div
+                                        class="text-yellow-400 bg-yellow-400/10 p-4 rounded-full ring-2 ring-yellow-400/30">
+                                        <svg class="size-10" fill="currentColor" viewBox="0 0 256 256"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M152,120H136V56h8a32,32,0,0,1,32,32,8,8,0,0,0,16,0,48.05,48.05,0,0,0-48-48h-8V24a8,8,0,0,0-16,0V40h-8a48,48,0,0,0,0,96h8v64H104a32,32,0,0,1-32-32,8,8,0,0,0-16,0,48.05,48.05,0,0,0,48,48h16v16a8,8,0,0,0,16,0V216h16a48,48,0,0,0,0-96Zm-40,0a32,32,0,0,1,0-64h8v64Zm40,80H136V136h16a32,32,0,0,1,0,64Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <h3 class="text-white text-xl font-semibold leading-tight">Cost-Effective
+                                            Solutions</h3>
+                                        <p class="text-gray-400 text-sm font-normal leading-relaxed">We offer
+                                            competitive pricing and flexible packages to suit your budget and
+                                            requirements, ensuring maximum value.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+             <footer class="flex justify-center border-t border-solid border-t-gray-800 mt-16 bg-gray-950">
+                <div class="flex max-w-screen-xl w-full flex-col px-5 py-12 @container">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10 text-gray-400">
+                        <div>
+                            <div class="flex items-center gap-3 text-white mb-4">
+                                <svg class="h-8 w-8 text-yellow-400" fill="none" viewBox="0 0 48 48"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd"
+                                        d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                    <path clip-rule="evenodd"
+                                        d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                </svg>
+                                <h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">Dhanwis TechInfo Solution</h2>
+                            </div>
+                            <p class="text-sm leading-relaxed mb-4">Empowering businesses with cutting-edge web
+                                solutions and impactful digital marketing strategies.</p>
+                            <div class="flex space-x-4">
+                                <a class="text-gray-400 hover:text-yellow-400 transition-colors" href="#"><svg
+                                        class="h-5 w-5" fill="none" height="24" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
+                                        </path>
+                                    </svg></a>
+                                <a class="text-gray-400 hover:text-yellow-400 transition-colors" href="#"><svg
+                                        class="h-5 w-5" fill="none" height="24" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                                        </path>
+                                    </svg></a>
+                                <a class="text-gray-400 hover:text-yellow-400 transition-colors" href="#"><svg
+                                        class="h-5 w-5" fill="none" height="24" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                        </path>
+                                        <rect height="12" width="4" x="2" y="9"></rect>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
+                            <ul class="space-y-2 text-sm">
+                                <li><a class="hover:text-yellow-400 transition-colors" href="#">Services</a></li>
+                                <li><a class="hover:text-yellow-400 transition-colors" href="#">Portfolio</a></li>
+                                <li><a class="hover:text-yellow-400 transition-colors" href="#">Blog</a></li>
+                                <li><a class="hover:text-yellow-400 transition-colors" href="#">About Us</a></li>
+                                <li><a class="hover:text-yellow-400 transition-colors" href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-white text-lg font-semibold mb-4">Contact Us</h3>
+                            <address class="not-italic text-sm space-y-2">
+                                <p>123 Tech Avenue, Silicon Valley, CA 94000</p>
+                                <p>Email: <a class="hover:text-yellow-400 transition-colors"
+                                        href="mailto:info@techrisesolutions.com">info@techrisesolutions.com</a></p>
+                                <p>Phone: <a class="hover:text-yellow-400 transition-colors"
+                                        href="tel:+1234567890">(123) 456-7890</a></p>
+                            </address>
+                        </div>
+                    </div>
+                    <div
+                        class="border-t border-gray-700 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm">
+                        <p class="text-gray-500">© 2024 Dhanwis TechInfo Solution. All rights reserved.</p>
+                        <div class="flex gap-x-6 gap-y-2 mt-4 sm:mt-0">
+                            <a class="text-gray-400 hover:text-yellow-400 transition-colors" href="#">Privacy Policy</a>
+                            <a class="text-gray-400 hover:text-yellow-400 transition-colors" href="#">Terms of
+                                Service</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

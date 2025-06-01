@@ -1,0 +1,477 @@
+<html>
+
+<head>
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link as="style"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+        onload="this.rel='stylesheet'" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanwis TechInfo Solution - Elevating Your Online Presence</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+        .gradient-overlay {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.95) 70%, #000000 100%);
+        }
+    </style>
+    <meta charset="utf-8" />
+</head>
+
+<body class="bg-black">
+    <div class="relative flex size-full min-h-screen flex-col dark group/design-root overflow-x-hidden"
+        style='font-family: Inter, "Noto Sans", sans-serif;'>
+        <div class="layout-container flex h-full grow flex-col">
+            <header
+                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-gray-800 px-6 md:px-10 py-5 shadow-lg bg-gray-950/80 backdrop-blur-md sticky top-0 z-50">
+                <div class="flex items-center gap-3 text-white">
+                    <div class="size-8 text-yellow-400">
+                        <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <a href="./index.html"
+                        class="text-white text-xl md:text-2xl font-bold leading-tight tracking-[-0.015em]">Dhanwis</a>
+                </div>
+
+                <!-- Hamburger Menu Button (only shows on small screens) -->
+                <button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none" aria-label="Toggle menu">
+                    ☰
+                </button>
+
+                <!-- Navigation Menu -->
+                <nav id="menu"
+                    class="hidden md:flex flex-col md:flex-row md:flex-1 md:justify-end gap-6 md:gap-10 mt-4 md:mt-0 bg-gray-950 md:bg-transparent p-6 md:p-0 rounded-lg md:rounded-none absolute md:static top-[100%] right-6 md:right-auto w-[calc(100%-3rem)] md:w-auto z-40">
+                    <div class="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8">
+                        <a class="text-gray-300 hover:text-yellow-400 text-lg font-medium leading-normal transition-all duration-300 ease-in-out hover:scale-105"
+                            href="./services.html">Services</a>
+                        <a class="text-gray-300 hover:text-yellow-400 text-lg font-medium leading-normal transition-all duration-300 ease-in-out hover:scale-105"
+                            href="./about.html">About</a>
+                        <a class="text-gray-300 hover:text-yellow-400 text-lg font-medium leading-normal transition-all duration-300 ease-in-out hover:scale-105"
+                            href="./portfolio.html">Portfolio</a>
+                        <a class="text-gray-300 hover:text-yellow-400 text-lg font-medium leading-normal transition-all duration-300 ease-in-out hover:scale-105"
+                            href="./blog.html">Blog</a>
+                        <a class="text-gray-300 hover:text-yellow-400 text-lg font-medium leading-normal transition-all duration-300 ease-in-out hover:scale-105"
+                            href="./career.html">Career</a>
+                        <a class="text-gray-300 hover:text-yellow-400 text-lg font-medium leading-normal transition-all duration-300 ease-in-out hover:scale-105"
+                            href="./contact.html">Contact</a>
+                    </div>
+                    <button
+                        class="mt-4 md:mt-0 flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-yellow-400 hover:bg-yellow-500 text-black text-lg font-semibold leading-normal tracking-[0.015em] transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-yellow-500/50 transform hover:scale-105">
+                        <span class="truncate">Get a Quote</span>
+                    </button>
+                </nav>
+            </header>
+            <main class="flex flex-1 flex-col">
+                <section class="relative py-20 sm:py-32 md:py-40">
+                    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuANLaotT5ZsMqtstsitt99D0QMTLugt75XimBWg0q6rqK8MHKyDA-BUgfqhMaJixENLUdsBOii7FOTevKIntD5JCcf-hVBYLF2pawN4SfEMHKRxSuZ_ibBoIpM3Q-YA_uaKhpryhUZrWp__ZP2VjX0jPu2CGzZVw6Sks6nqfJVEKUdkUsuoTrjS6bneidV4Wd0L95smRY9AAtbeSHbVuqXQIFiN2PntkfT-SuaE270rDgjNuGEkUzEcEDbcSmt5yXLnqJBkWbxnzB4");'>
+                    </div>
+                    <div class="absolute inset-0 gradient-overlay"></div>
+                    <div class="relative mx-auto max-w-screen-xl px-6 sm:px-10">
+                        <div class="flex flex-col items-center text-center">
+                            <h1
+                                class="text-white  lg:text-7xl  text-4xl font-black leading-tight tracking-tighter">
+                                Innovate. <span class="text-yellow-400">Engage.</span> Conquer.
+                            </h1>
+                            <p class="mt-6 max-w-2xl text-gray-300 text-lg sm:text-xl leading-relaxed">
+                                Dhanwis TechInfo Solution is your partner in forging a powerful online identity. We build
+                                stunning websites, execute impactful digital marketing strategies, and help you dominate
+                                search rankings. Let's create something extraordinary together.
+                            </p>
+                            <button
+                                class="mt-10 flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-yellow-400 hover:bg-yellow-500 transition-colors text-black text-base font-bold leading-normal tracking-[0.015em]">
+                                <span class="truncate">Discover Our Solutions</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-16 sm:py-24 px-6 sm:px-10 bg-gray-900/50">
+                    <div class="mx-auto max-w-screen-xl">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                            <div class="relative">
+                                <div
+                                    class="absolute -top-8 -left-8 w-24 h-24 bg-yellow-400 rounded-full opacity-30 animate-pulse">
+                                </div>
+                                <div
+                                    class="absolute -bottom-8 -right-8 w-32 h-32 bg-yellow-500 rounded-full opacity-30 animate-pulse delay-75">
+                                </div>
+                                <img alt="Our Team Working"
+                                    class="rounded-xl shadow-2xl relative z-10 transform hover:scale-105 transition-transform duration-500 w-full object-cover aspect-[4/3]"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNPDFO4t9AGA3il_JmP6Qb3YJOD0TLQMoVU-RsE-S--JOA3U1Dal-0IK5fb5FtRCPxj1QKAtRsLT7SaTijBlaRiMpNxhNw4swc7XZZ2-Zb9WY6H9G_qyUg0AF7DWvSUONyZJJ_o2W2rw2u7_lOO3QtjoKhOXFHgnS2LnAiZTTN9JtqRDXKrDinDMUmk1G6Se9e6Scp2A9PoO82gN30oLNMUiJxwyEPP14ibWOqurMWURLsQO-8aVIqEXUUK1L_H5Q9PWs4PzGoUQ4" />
+                            </div>
+                            <div class="text-center lg:text-left">
+                                <h2 class="text-yellow-400 text-base font-semibold tracking-wider uppercase">About Us
+                                </h2>
+                                <h3 class="mt-2 text-white text-3xl sm:text-4xl font-bold leading-tight tracking-tight">
+                                    Your Digital Architects</h3>
+                                <p class="mt-6 text-gray-300 text-lg leading-relaxed">
+                                    At Dhanwis TechInfo Solution, we are a collective of passionate designers, developers, and
+                                    marketers dedicated to transforming your digital vision into reality. We believe in
+                                    the power of technology and creativity to build exceptional online experiences.
+                                </p>
+                                <p class="mt-4 text-gray-300 text-lg leading-relaxed">
+                                    Our mission is to empower your business with cutting-edge web solutions and
+                                    strategic marketing that delivers measurable success and lasting growth. We are not
+                                    just service providers; we are your collaborators in the digital realm.
+                                </p>
+                                <button
+                                    class="mt-10 flex mx-auto lg:mx-0 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-yellow-400 hover:bg-yellow-500 transition-colors text-black text-base font-bold leading-normal tracking-[0.015em] group">
+                                    <span class="truncate">Meet the Team</span>
+                                    <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform"
+                                        fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path clip-rule="evenodd"
+                                            d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                                            fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-16 sm:py-24 bg-black">
+                    <div class="mx-auto max-w-screen-xl px-6 sm:px-10">
+                        <h2
+                            class="text-white text-3xl sm:text-4xl font-bold leading-tight tracking-tight text-center mb-12 sm:mb-16">
+                            Our Core Expertise</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div
+                                class="flex flex-col gap-4 rounded-xl border border-gray-700 bg-gray-900 p-6 transform hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-yellow-400/30">
+                                <div class="text-yellow-400 size-10">
+                                    <svg class="w-full h-full" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.75 7.5l3 2.25-3 2.25m3 0h3m-3 2.25l3 2.25-3 2.25M6.75 12h3m1.5 0h3m-3 0a3 3 0 10-6 0 3 3 0 006 0zM17.25 7.5L14.25 12l3 4.5m-3-4.5h3m-3 4.5l3-4.5-3-4.5M12 3c2.755 0 5.055.668 6.75 1.883M12 21c-2.755 0-5.055-.668-6.75-1.883M12 3c-2.755 0-5.055.668-6.75 1.883m13.5 0A18.632 18.632 0 0112 21m6.75-16.117A18.634 18.634 0 0012 3"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <h3 class="text-white text-xl font-bold leading-tight">Bespoke Web Development</h3>
+                                    <p class="text-gray-400 text-sm font-normal leading-normal">We build beautiful,
+                                        responsive, and scalable websites tailored to your brand's unique needs,
+                                        ensuring an exceptional user experience.</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col gap-4 rounded-xl border border-gray-700 bg-gray-900 p-6 transform hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-yellow-400/30">
+                                <div class="text-yellow-400 size-10">
+                                    <svg class="w-full h-full" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <h3 class="text-white text-xl font-bold leading-tight">Strategic SEO &amp; Content
+                                    </h3>
+                                    <p class="text-gray-400 text-sm font-normal leading-normal">Enhance your online
+                                        visibility and climb search rankings with our data-driven SEO strategies and
+                                        compelling content creation.</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col gap-4 rounded-xl border border-gray-700 bg-gray-900 p-6 transform hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-yellow-400/30">
+                                <div class="text-yellow-400 size-10">
+                                    <svg class="w-full h-full" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <h3 class="text-white text-xl font-bold leading-tight">Dynamic Digital Marketing
+                                    </h3>
+                                    <p class="text-gray-400 text-sm font-normal leading-normal">From social media to
+                                        PPC, we craft comprehensive digital marketing campaigns that drive engagement,
+                                        conversions, and ROI.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-12 sm:mt-16 text-center">
+                            <button
+                                class="flex mx-auto min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-yellow-400 hover:bg-yellow-500 transition-colors text-black text-base font-bold leading-normal tracking-[0.015em] group">
+                                <span class="truncate">Explore Our Capabilities</span>
+                                <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform"
+                                    fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd"
+                                        d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-16 sm:py-24 px-6 sm:px-10 bg-gray-900/50">
+                    <div class="mx-auto max-w-screen-xl">
+                        <h2
+                            class="text-white text-3xl sm:text-4xl font-bold leading-tight tracking-tight text-center mb-12 sm:mb-16">
+                            Showcasing Our Impact</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div
+                                class="flex flex-col gap-4 rounded-lg bg-black overflow-hidden shadow-lg transform hover:shadow-yellow-400/30 transition-shadow duration-300">
+                                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuANLaotT5ZsMqtstsitt99D0QMTLugt75XimBWg0q6rqK8MHKyDA-BUgfqhMaJixENLUdsBOii7FOTevKIntD5JCcf-hVBYLF2pawN4SfEMHKRxSuZ_ibBoIpM3Q-YA_uaKhpryhUZrWp__ZP2VjX0jPu2CGzZVw6Sks6nqfJVEKUdkUsuoTrjS6bneidV4Wd0L95smRY9AAtbeSHbVuqXQIFiN2PntkfT-SuaE270rDgjNuGEkUzEcEDbcSmt5yXLnqJBkWbxnzB4");'>
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-yellow-400 text-lg font-semibold leading-normal">E-commerce
+                                        Revolution</h3>
+                                    <p class="mt-2 text-gray-300 text-sm font-normal leading-normal">
+                                        Developed a cutting-edge e-commerce platform, leading to a 60% surge in online
+                                        sales and enhanced customer engagement for a retail giant.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col gap-4 rounded-lg bg-black overflow-hidden shadow-lg transform hover:shadow-yellow-400/30 transition-shadow duration-300">
+                                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuANLaotT5ZsMqtstsitt99D0QMTLugt75XimBWg0q6rqK8MHKyDA-BUgfqhMaJixENLUdsBOii7FOTevKIntD5JCcf-hVBYLF2pawN4SfEMHKRxSuZ_ibBoIpM3Q-YA_uaKhpryhUZrWp__ZP2VjX0jPu2CGzZVw6Sks6nqfJVEKUdkUsuoTrjS6bneidV4Wd0L95smRY9AAtbeSHbVuqXQIFiN2PntkfT-SuaE270rDgjNuGEkUzEcEDbcSmt5yXLnqJBkWbxnzB4");'>
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-yellow-400 text-lg font-semibold leading-normal">Startup
+                                        Amplification</h3>
+                                    <p class="mt-2 text-gray-300 text-sm font-normal leading-normal">
+                                        Launched a comprehensive digital strategy for a tech startup, achieving a 200%
+                                        increase in qualified leads within the first six months.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col gap-4 rounded-lg bg-black overflow-hidden shadow-lg transform hover:shadow-yellow-400/30 transition-shadow duration-300">
+                                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuANLaotT5ZsMqtstsitt99D0QMTLugt75XimBWg0q6rqK8MHKyDA-BUgfqhMaJixENLUdsBOii7FOTevKIntD5JCcf-hVBYLF2pawN4SfEMHKRxSuZ_ibBoIpM3Q-YA_uaKhpryhUZrWp__ZP2VjX0jPu2CGzZVw6Sks6nqfJVEKUdkUsuoTrjS6bneidV4Wd0L95smRY9AAtbeSHbVuqXQIFiN2PntkfT-SuaE270rDgjNuGEkUzEcEDbcSmt5yXLnqJBkWbxnzB4");'>
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="text-yellow-400 text-lg font-semibold leading-normal">Brand
+                                        Revitalization</h3>
+                                    <p class="mt-2 text-gray-300 text-sm font-normal leading-normal">
+                                        Reimagined an established brand's online presence, resulting in a 75% growth in
+                                        social media engagement and improved brand perception.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-16 sm:py-24 bg-black">
+                    <div class="mx-auto max-w-screen-xl px-6 sm:px-10">
+                        <h2
+                            class="text-white text-3xl sm:text-4xl font-bold leading-tight tracking-tight text-center mb-12 sm:mb-16">
+                            What Our Clients Say</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div
+                                class="flex flex-col items-center text-center p-8 rounded-xl border border-gray-700 bg-gray-900 transform hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-yellow-400/30">
+                                <img alt="Client 1 Avatar"
+                                    class="w-24 h-24 rounded-full mb-6 object-cover border-4 border-yellow-400"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjvgph4QUVqUnrfUT8nDnNMcLVN9L2B8q2Utix0pk8vofCZEJtGGHl-U7aUADFIwqQAfnBSSrJVelgq8nn6W5_4LS0xyCbtavj6ITjD5yAIpjDPq3vk-EPBpPIoHkEYFKhR4SAZCXBjnww51Mnf-sdmCXo-6Vo6UQWhwxla2tXVn8cXHggdq9Vzii8w-ZaQVdExb4CtnrEljqzoAm1bZMDB8imTwbskK0UYdXBKqAV4nSSwNxEBg7xOUvEPG_Co6-lCxN62jZhrzI" />
+                                <p class="text-gray-300 text-lg italic mb-4">"Dhanwis TechInfo Solution transformed our online
+                                    presence. Their team is professional, creative, and delivered results beyond our
+                                    expectations. Highly recommended!"</p>
+                                <h4 class="text-yellow-400 text-lg font-semibold">Sarah L., CEO of Innovatech</h4>
+                                <p class="text-gray-500 text-sm">Tech Solutions</p>
+                            </div>
+                            <div
+                                class="flex flex-col items-center text-center p-8 rounded-xl border border-gray-700 bg-gray-900 transform hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-yellow-400/30">
+                                <img alt="Client 2 Avatar"
+                                    class="w-24 h-24 rounded-full mb-6 object-cover border-4 border-yellow-400"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXVuAWg-6qPXuP1ZhoERtlRTMqkptD8jj1rAn7rj8ncH6P6azkzuuv3s6kI3_TO1GOKDIgxyTMM-d1QxCpeIhD9HB2kIkyO5vmqYmOteuaykXxvThEEUTP6HKvPvf29Dzj0bNLEdanZdy9iCMo9gg-htT0aQOXgf3NL8fymDUyMlNSCXmqLSnq-xxIoVJjm4gby6or39dRsCJxskTwosOPfxUaXHKldQA9HlpxdOAlJ9t1QlFJ_YEp_Vd4wF7SjV9Ae-gBKbWcxlQ" />
+                                <p class="text-gray-300 text-lg italic mb-4">"The new website and marketing strategy
+                                    have significantly boosted our leads. The Dhanwis TechInfo Solution team is a pleasure to
+                                    work with and truly understands our needs."</p>
+                                <h4 class="text-yellow-400 text-lg font-semibold">John B., Marketing Director</h4>
+                                <p class="text-gray-500 text-sm">Growth Co.</p>
+                            </div>
+                            <div
+                                class="flex flex-col items-center text-center p-8 rounded-xl border border-gray-700 bg-gray-900 transform hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-yellow-400/30">
+                                <img alt="Client 3 Avatar"
+                                    class="w-24 h-24 rounded-full mb-6 object-cover border-4 border-yellow-400"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-WzXbZ2m8rDm1vJShrx16Tej-q572pD65t81Qtw6w568UQdkWJOmI_k8B2t0G9CNDHBjmwiAp7d4MMA89uDke20Bz9tk9NazYajy31OOEWjPEgfmGfIc2NBE_qmKl-c5tfYNAtLnJZsaJIkmUXnMJkF7yZzIwBAL5YG68UO8GkYZDxALikffuSRiKK9jJueNqb59mGiBR0lN4lYcna0iLrw4tO41ej4dFQ1U_j0xXhRzSw1oCCLdyFqMQuYHaZe50w2UwH9wmURE" />
+                                <p class="text-gray-300 text-lg italic mb-4">"Our search rankings have skyrocketed since
+                                    partnering with WebCraft. Their SEO expertise is unparalleled, and they always keep
+                                    us informed."</p>
+                                <h4 class="text-yellow-400 text-lg font-semibold">Emily K., Founder of OrganiBloom</h4>
+                                <p class="text-gray-500 text-sm">Wellness &amp; Lifestyle</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-16 sm:py-24 px-6 sm:px-10 bg-gray-900/50">
+                    <div class="mx-auto max-w-screen-xl">
+                        <div class="text-center mb-12 sm:mb-16">
+                            <h2 class="text-white text-3xl sm:text-4xl font-bold leading-tight tracking-tight">From Our
+                                Blog</h2>
+                            <p class="mt-4 text-gray-400 text-lg max-w-2xl mx-auto">Stay updated with the latest trends
+                                in web development, digital marketing, and SEO strategies.</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div
+                                class="bg-black rounded-xl overflow-hidden shadow-lg hover:shadow-yellow-400/30 transition-shadow duration-300 group">
+                                <a class="block" href="#">
+                                    <div class="w-full h-56 bg-cover bg-center"
+                                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDNjMKlwRAMRUgZb5zBivo9V-N1uNr223a58Psq6imKkCp3ZP8zbGcZ8eJlhJG7jyBaW8TJ8OIANrn3ETJIgGVd_k9bvPYMuSZk1ZDi_QLWqpbNFNmH6SAFyhcdCqYHXikE0yGzgL_Wa7NDcm511wiHuRhqHi2WTnOqJ5Z6wqnhzHS2hgEhLU-O0nxsGB9DvTfComHGiB5YZUV4RJ8C58_TWJPiJ8_URVw-g_J9BRB1oP2_s27u2aDJ8VpIIhe8ruYz8RhmDnL-fGI')">
+                                    </div>
+                                    <div class="p-6">
+                                        <span class="text-xs text-yellow-400 font-semibold uppercase tracking-wider">Web
+                                            Development</span>
+                                        <h3
+                                            class="mt-2 text-white text-xl font-semibold group-hover:text-yellow-400 transition-colors">
+                                            The Future of Web Design: Trends to Watch in 2024</h3>
+                                        <p class="mt-3 text-gray-400 text-sm leading-relaxed">Discover the cutting-edge
+                                            web design trends that will shape the digital landscape in the coming year
+                                            and how you can leverage them.</p>
+                                        <p class="mt-4 text-yellow-400 text-sm font-medium">Read More →</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div
+                                class="bg-black rounded-xl overflow-hidden shadow-lg hover:shadow-yellow-400/30 transition-shadow duration-300 group">
+                                <a class="block" href="#">
+                                    <div class="w-full h-56 bg-cover bg-center"
+                                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDNjMKlwRAMRUgZb5zBivo9V-N1uNr223a58Psq6imKkCp3ZP8zbGcZ8eJlhJG7jyBaW8TJ8OIANrn3ETJIgGVd_k9bvPYMuSZk1ZDi_QLWqpbNFNmH6SAFyhcdCqYHXikE0yGzgL_Wa7NDcm511wiHuRhqHi2WTnOqJ5Z6wqnhzHS2hgEhLU-O0nxsGB9DvTfComHGiB5YZUV4RJ8C58_TWJPiJ8_URVw-g_J9BRB1oP2_s27u2aDJ8VpIIhe8ruYz8RhmDnL-fGI')">
+                                    </div>
+                                    <div class="p-6">
+                                        <span
+                                            class="text-xs text-yellow-400 font-semibold uppercase tracking-wider">Digital
+                                            Marketing</span>
+                                        <h3
+                                            class="mt-2 text-white text-xl font-semibold group-hover:text-yellow-400 transition-colors">
+                                            Unlocking Growth: The Power of Content Marketing</h3>
+                                        <p class="mt-3 text-gray-400 text-sm leading-relaxed">Learn how strategic
+                                            content marketing can drive traffic, engage your audience, and ultimately
+                                            boost your bottom line.</p>
+                                        <p class="mt-4 text-yellow-400 text-sm font-medium">Read More →</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div
+                                class="bg-black rounded-xl overflow-hidden shadow-lg hover:shadow-yellow-400/30 transition-shadow duration-300 group">
+                                <a class="block" href="#">
+                                    <div class="w-full h-56 bg-cover bg-center"
+                                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDNjMKlwRAMRUgZb5zBivo9V-N1uNr223a58Psq6imKkCp3ZP8zbGcZ8eJlhJG7jyBaW8TJ8OIANrn3ETJIgGVd_k9bvPYMuSZk1ZDi_QLWqpbNFNmH6SAFyhcdCqYHXikE0yGzgL_Wa7NDcm511wiHuRhqHi2WTnOqJ5Z6wqnhzHS2hgEhLU-O0nxsGB9DvTfComHGiB5YZUV4RJ8C58_TWJPiJ8_URVw-g_J9BRB1oP2_s27u2aDJ8VpIIhe8ruYz8RhmDnL-fGI')">
+                                    </div>
+                                    <div class="p-6">
+                                        <span
+                                            class="text-xs text-yellow-400 font-semibold uppercase tracking-wider">SEO</span>
+                                        <h3
+                                            class="mt-2 text-white text-xl font-semibold group-hover:text-yellow-400 transition-colors">
+                                            Mastering Local SEO: A Guide for Small Businesses</h3>
+                                        <p class="mt-3 text-gray-400 text-sm leading-relaxed">Dominate your local market
+                                            with these essential local SEO tips and techniques designed for small to
+                                            medium-sized businesses.</p>
+                                        <p class="mt-4 text-yellow-400 text-sm font-medium">Read More →</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mt-12 sm:mt-16 text-center">
+                            <button
+                                class="flex mx-auto min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-yellow-400 hover:bg-yellow-500 transition-colors text-black text-base font-bold leading-normal tracking-[0.015em]">
+                                <span class="truncate">Visit Our Blog</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-16 sm:py-24 px-6 sm:px-10 bg-yellow-400">
+                    <div class="mx-auto max-w-screen-md text-center">
+                        <h2 class="text-black text-3xl sm:text-4xl font-black leading-tight tracking-tight">Ready to
+                            Ignite Your Digital Transformation?</h2>
+                        <p class="mt-4 text-gray-800 text-lg">Let's discuss how Dhanwis TechInfo Solution can help you achieve
+                            your online goals.</p>
+                        <button
+                            class="mt-10 flex mx-auto min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-black hover:bg-gray-800 transition-colors text-yellow-400 text-base font-bold leading-normal tracking-[0.015em]">
+                            <span class="truncate">Schedule Your Free Consultation</span>
+                        </button>
+                    </div>
+                </section>
+            </main>
+          <footer class="flex justify-center border-t border-solid border-t-gray-800 mt-16 bg-gray-950">
+                <div class="flex max-w-screen-xl w-full flex-col px-5 py-12 @container">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10 text-gray-400">
+                        <div>
+                            <div class="flex items-center gap-3 text-white mb-4">
+                                <svg class="h-8 w-8 text-yellow-400" fill="none" viewBox="0 0 48 48"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd"
+                                        d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                    <path clip-rule="evenodd"
+                                        d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                </svg>
+                                <h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">Dhanwis TechInfo Solution</h2>
+                            </div>
+                            <p class="text-sm leading-relaxed mb-4">Empowering businesses with cutting-edge web
+                                solutions and impactful digital marketing strategies.</p>
+                            <div class="flex space-x-4">
+                                <a class="text-gray-400 hover:text-yellow-400 transition-colors" href="#"><svg
+                                        class="h-5 w-5" fill="none" height="24" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
+                                        </path>
+                                    </svg></a>
+                                <a class="text-gray-400 hover:text-yellow-400 transition-colors" href="#"><svg
+                                        class="h-5 w-5" fill="none" height="24" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                                        </path>
+                                    </svg></a>
+                                <a class="text-gray-400 hover:text-yellow-400 transition-colors" href="#"><svg
+                                        class="h-5 w-5" fill="none" height="24" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                        </path>
+                                        <rect height="12" width="4" x="2" y="9"></rect>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
+                            <ul class="space-y-2 text-sm">
+                                <li><a class="hover:text-yellow-400 transition-colors" href="#">Services</a></li>
+                                <li><a class="hover:text-yellow-400 transition-colors" href="#">Portfolio</a></li>
+                                <li><a class="hover:text-yellow-400 transition-colors" href="#">Blog</a></li>
+                                <li><a class="hover:text-yellow-400 transition-colors" href="#">About Us</a></li>
+                                <li><a class="hover:text-yellow-400 transition-colors" href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-white text-lg font-semibold mb-4">Contact Us</h3>
+                            <address class="not-italic text-sm space-y-2">
+                                <p>123 Tech Avenue, Silicon Valley, CA 94000</p>
+                                <p>Email: <a class="hover:text-yellow-400 transition-colors"
+                                        href="mailto:info@techrisesolutions.com">info@techrisesolutions.com</a></p>
+                                <p>Phone: <a class="hover:text-yellow-400 transition-colors"
+                                        href="tel:+1234567890">(123) 456-7890</a></p>
+                            </address>
+                        </div>
+                    </div>
+                    <div
+                        class="border-t border-gray-700 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm">
+                        <p class="text-gray-500">© 2024 Dhanwis TechInfo Solution. All rights reserved.</p>
+                        <div class="flex gap-x-6 gap-y-2 mt-4 sm:mt-0">
+                            <a class="text-gray-400 hover:text-yellow-400 transition-colors" href="#">Privacy Policy</a>
+                            <a class="text-gray-400 hover:text-yellow-400 transition-colors" href="#">Terms of
+                                Service</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="./script.js">
+
+    </script>
+
+
+</body>
+
+</html>
